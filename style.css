@@ -1,0 +1,619 @@
+/* =====================================================
+   ✅ VARIABLES – Premium Gold Theme
+===================================================== */
+:root {
+    --gold: #d4af37;
+    --gold-dark: #8a6d1d;
+    --gold-soft: #e3d2a2;
+    --dark: #1a1a1a;
+    --light-bg: #f5f5f5;
+    --card-bg: #ffffff;
+}
+
+/* =====================================================
+   ✅ GENERAL
+===================================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--light-bg);
+    color: #222;
+}
+
+/* =====================================================
+   ✅ HEADER
+===================================================== */
+.header {
+    position: relative;
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+.header a {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =====================================================
+   ✅ HERO – Homepage
+===================================================== */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #444;
+}
+
+/* =====================================================
+   ✅ SEARCH & FILTER
+===================================================== */
+.search-input {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: block;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 2px solid var(--gold);
+    font-size: 18px;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+
+.filter-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.filter-select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
+}
+
+/* =====================================================
+   ✅ PRODUCT GRID
+===================================================== */
+.products-section {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.price-box {
+    margin: 15px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* =====================================================
+   ✅ BUTTONS
+===================================================== */
+.view-btn,
+.checkout-btn,
+.cta-btn,
+.load-more-btn {
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease;
+    border: none;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.view-btn:hover {
+    transform: scale(1.05);
+}
+
+/* =====================================================
+   ✅ PRODUCT PAGE
+===================================================== */
+.product-hero {
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-main-image {
+    width: 420px;
+    border-radius: 20px;
+}
+
+.hero-info h1 {
+    font-size: 32px;
+}
+
+/* =====================================================
+   ✅ GALLERY
+===================================================== */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    opacity: .6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.thumbnail.active {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+/* =====================================================
+   ✅ ORDER FORM
+===================================================== */
+.order-section {
+    width: 90%;
+    margin: 40px auto;
+    padding: 35px;
+    background: #fff;
+    border-radius: 18px;
+}
+
+.order-section input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
+    font-size: 16px;
+}
+
+/* =====================================================
+   ✅ CART – PREMIUM
+===================================================== */
+.cart-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #f8f5ef;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.cart-row {
+    background: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 18px;
+    border-radius: 14px;
+    align-items: center;
+}
+
+.cart-row img {
+    width: 120px;
+    border-radius: 12px;
+}
+
+.qty-btn {
+    background: var(--gold);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+/* =====================================================
+   ✅ WHATSAPP FLOAT
+===================================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+}
+
+/* =====================================================
+   ✅ FOOTER LEGAL
+===================================================== */
+.footer-legal {
+    background: var(--dark);
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-links a {
+    color: var(--gold);
+    margin: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* =====================================================
+   ✅ RESPONSIVE
+===================================================== */
+@media (max-width: 768px) {
+    .product-hero {
+        flex-direction: column;
+    }
+
+    .header a {
+        position: static;
+        transform: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* =====================================================
+✅ ANDROID FIRST MOBILE DASHBOARD
+===================================================== */
+
+.mobile-header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #d4af37, #8a6d1d);
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.mobile-hero img {
+    width: 100%;
+    display: block;
+}
+
+.mobile-card {
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.mobile-card h1 {
+    margin-top: 0;
+}
+
+.badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.badge {
+    background: #f1f1f1;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.mobile-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.mobile-accordion {
+    margin: 15px;
+}
+
+.mobile-accordion details {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.mobile-accordion summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mobile-reviews {
+    margin: 15px;
+}
+
+.mobile-cta {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: #fff;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,.3);
+    z-index: 9999;
+}
+
+/* Spațiu pentru CTA */
+body {
+    padding-bottom: 90px;
+}
+
+/* =====================================================
+✅ DESKTOP FALLBACK (AUTOMAT)
+===================================================== */
+@media (min-width: 900px) {
+    .mobile-cta {
+        position: static;
+        display: inline-block;
+        margin: 20px auto;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+}
+/* ===============================
+MENIU NAVIGATIE – B2B
+=============================== */
+
+.main-nav {
+    background: #1a1a1a;
+    border-bottom: 3px solid #d4af37;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #d4af37;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* ===============================
+RESPONSIVE – MOBILE
+=============================== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+/* ===============================
+HIGHLIGHT PAGINĂ ACTIVĂ ÎN MENIU
+=============================== */
+
+.nav-links a.active {
+    color: #d4af37;
+    border-bottom: 3px solid #d4af37;
+    font-weight: 600;
+}
+/* ===============================
+LANGUAGE SWITCHER – RO / EN
+=============================== */
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.lang-link {
+    color: #492395;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lang-link:hover {
+    color: #d4af37;
+}
+
+/* Pagina activă */
+.lang-link.active {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .lang-switch {
+        margin-top: 10px;
+    }
+}
+/* ===============================
+CTA MENIU – SOLICITA OFERTA
+=============================== */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.quote-btn {
+    background: #d4af37;
+    color: #1a1a1a;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.quote-btn:hover {
+    background: #b8972f;
+    color: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .quote-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+.applications-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.applications-section ul {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  text-align: left;
+}
+
+.applications-section li {
+  margin-bottom: 10px;
+}
+``
