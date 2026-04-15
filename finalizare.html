@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizare comandă - Elegant Gold PRO MAX</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<a href="https://wa.me/40712345678?text=Bună! Aș dori mai multe informații."
+   class="whatsapp-float" target="_blank">
+    💬 WhatsApp
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+.whatsapp-float:hover {
+    background: #1ebe5d;
+}
+</style>
+
+<body>
+
+<header class="header">
+    <a href="cos.html">⟵ Înapoi la coș</a>
+    <h1>Finalizare comandă</h1>
+</header>
+
+<section class="cart-section">
+    <h2>Rezumat comandă</h2>
+    <div id="checkoutItems" class="cart-container"></div>
+
+    <h3>Total: <span id="checkoutTotal">0</span> lei</h3>
+
+    <hr style="margin:30px 0">
+
+    <h2>Date livrare</h2>
+
+    <form id="checkoutForm" class="order-section">
+        <label>Nume complet</label>
+        <input type="text" name="name" required>
+
+        <label>Telefon</label>
+        <input type="tel" name="phone" required>
+
+        <label>Adresă completă</label>
+        <textarea name="address" required></textarea>
+
+        <input type="hidden" name="order" id="orderData">
+        <input type="hidden" name="total" id="orderTotal">
+
+        <button type="submit" class="checkout-btn">
+            Trimite comanda
+        </button>
+    </form>
+</section>
+
+<footer class="footer-legal">
+    <div class="footer-links">
+        <a href="politica-confidentialitate.html" target="_blank">Politica de confidențialitate</a>
+        <a href="politica-retur.html" target="_blank">Politica de retur</a>
+        <a href="termeni-conditii.html" target="_blank">Termeni și condiții</a>
+        <a href="livrare-plata.html" target="_blank">Livrare și plată</a>
+    </div>
+
+    <p class="footer-copy">
+        © 2026 Elegant Gold PRO MAX. Toate drepturile rezervate.
+    </p>
+</footer>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/finalizare.js"></script>
+
+</body>
+</html>

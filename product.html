@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produs - Elegant Gold PRO MAX</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<audio id="addToCartSound" preload="auto">
+    <source src="assets/sounds/add-to-cart.mp3" type="audio/mpeg">
+</audio>
+
+<footer class="footer-legal">
+
+    <div class="footer-links">
+        <a href="politica-confidentialitate.html" target="_blank">Politica de confidențialitate</a>
+        <a href="politica-retur.html" target="_blank">Politica de retur</a>
+        <a href="termeni-conditii.html" target="_blank">Termeni și condiții</a>
+        <a href="livrare-plata.html" target="_blank">Livrare și plată</a>
+    </div>
+
+    <p class="footer-copy">
+        © 2026 Elegant Gold PRO MAX. Toate drepturile rezervate.
+    </p>
+
+</footer>
+<a href="https://wa.me/40712345678?text=Bună! Aș dori mai multe informații."
+   class="whatsapp-float" target="_blank">
+    💬 WhatsApp
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+.whatsapp-float:hover {
+    background: #1ebe5d;
+}
+</style>
+
+<body class="product-page">
+
+    <header class="header">
+        <a href="index.html" class="back-btn">⟵ Înapoi</a>
+
+        <a href="cos.html" class="cart-link">
+            🛒 <span id="cartCount">0</span>
+        </a>
+        <h1>Elegant Gold PRO MAX</h1>
+    </header>
+
+    <!-- ✅ SECTIONA CORECTA -->
+    <section class="product-hero">
+        <img id="productImage" src="" alt="Produs" class="product-main-image">
+
+        <div class="hero-info">
+            <h1 id="productName"></h1>
+            <p id="productShortDesc" class="short-desc"></p>
+
+            <div class="price-box">
+                <span id="oldPrice" class="old-price"></span>
+                <span id="newPrice" class="new-price"></span>
+            </div>
+
+            <button id="addToCartBtn" class="cta-btn">Adaugă în coș</button>
+
+            <button onclick="document.getElementById('orderForm').scrollIntoView()" class="cta-btn">
+                Comandă acum
+            </button>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <h2>Beneficii</h2>
+        <ul id="benefitsList"></ul>
+    </section>
+
+    <section class="description-section">
+        <h2>Descriere</h2>
+        <p id="productLongDesc"></p>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Recenzii</h2>
+        <div id="reviewsContainer"></div>
+    </section>
+
+    <section id="orderForm" class="order-section">
+        <h2>Plasează Comanda</h2>
+
+        <form action="https://formsubmit.co/platinymichelle@yahoo.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Produs" id="hiddenProductName">
+
+            <label>Nume complet:</label>
+            <input type="text" name="name" required>
+
+            <label>Telefon:</label>
+            <input type="tel" name="phone" required>
+
+            <label>Adresă:</label>
+            <input type="text" name="address" required>
+
+            <button type="submit" class="cta-btn">Trimite comanda</button>
+        </form>
+    </section>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/product-page.js"></script>
+
+</body>
+</html>
